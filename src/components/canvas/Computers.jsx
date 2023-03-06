@@ -29,6 +29,31 @@ const Computers = ({ isMobile }) => {
   );
 };
 
+const CommanCenter = ({ isMobile }) => {
+  const commandPanel = useGLTF("./sci-fi_command_panel/scene.gltf");
+
+  return (
+    <mesh>
+      <hemisphereLight intensity={0.35} groundColor="black" />
+      <spotLight
+        position={[-20, 50, 10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={2}
+        castShadow
+        shadow-mapSize={1024}
+      />
+      <pointLight intensity={1} />
+      <primitive
+        object={commandPanel.scene}
+        scale={isMobile ? 0.7 : 0.9}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, 0]}
+        rotation={[-0.01, -0.2, -0.1]}
+      />
+    </mesh>
+  );
+};
+
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -55,10 +80,12 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
+      className="cursor-pointer"
       frameloop="demand"
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: 30 }}
+      // camera={{ position: [20, 3, 5], fov: 20 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -68,6 +95,7 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
+        {/* <CommanCenter isMobile={isMobile} /> */}
       </Suspense>
 
       <Preload all />

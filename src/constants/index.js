@@ -19,9 +19,12 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  pixelspace,
+  databox,
+  chattycathy,
+  musicNotes,
+  claydazing,
+  garnish,
   threejs,
 } from "../assets";
 
@@ -120,56 +123,36 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Front End Developer",
+    company_name: "Clay Dazing",
+    icon: claydazing,
+    iconBg: "#fff",
+    link: "https://www.claydazing.com/",
+    date: "August 2022 - Current",
+    points: [
+      "Redesigned eCommerce website to maximize responsiveness—leading to increased sales and higher SEO/visibility.",
+      "Developed built-in search functionality garnering a more optimized customer shopping experience.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Garnish Music Production School - LA Chapter",
+    icon: garnish,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    // iconBg: "#E6DEDD",
+    link: "https://www.garnishmusicproduction.com/",
+    date: "August 2022 - Current",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a project-management system for the LA chapter of Garnish School of Music Production.",
+      "Designed a fully-functional login and registration system to streamline task management amongst employees, complete with authentication and authorization.",
+      "Integrated roles and permissions tool to provide a multi-tiered approach that optimizes the overall managerial-approval process.",
     ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    // points: [
+    //   "Developing and maintaining web applications using React.js and other related technologies.",
+    //   "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //   "Implementing responsive design and ensuring cross-browser compatibility.",
+    //   "Participating in code reviews and providing constructive feedback to other developers.",
+    // ],
   },
 ];
 
@@ -202,12 +185,12 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Pixel Space",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Full stack text-to-image generator, developed for users to share AI images with the community — Deployed with AWS.",
     tags: [
       {
-        name: "react",
+        name: "full stack",
         color: "blue-text-gradient",
       },
       {
@@ -215,20 +198,155 @@ const projects = [
         color: "green-text-gradient",
       },
       {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "redux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "green-text-gradient",
+      },
+      {
+        name: "cloudinary",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "openAI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "axios",
+        color: "green-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "pink-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: pixelspace,
+    source_code_link:
+      "https://github.com/keithhetrick/PixelSpace-FullStack-App",
   },
   {
-    name: "Job IT",
+    name: "Databox",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Full stack cloud based file hosting and storage service. Project currently in development.",
     tags: [
       {
+        name: "full stack",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "python",
+        color: "pink-text-gradient",
+      },
+      {
         name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: databox,
+    source_code_link: "https://github.com/keithhetrick/databox",
+  },
+  {
+    name: "Chatty Cathy",
+    description:
+      "Full stack chatbot tool developed to help users jump start their creative process — Deployed with AWS.",
+    tags: [
+      {
+        name: "full stack",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "axios",
+        color: "green-text-gradient",
+      },
+      {
+        name: "openAI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: chattycathy,
+    source_code_link: "https://github.com/keithhetrick/open-ai-chatty-cathy",
+  },
+  {
+    name: "musicNotes",
+    description:
+      "Full stack project-management system for the LA chapter of Garnish School of Music Production",
+    tags: [
+      {
+        name: "full stack",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redux",
         color: "blue-text-gradient",
       },
       {
@@ -236,33 +354,16 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
         name: "css",
         color: "pink-text-gradient",
       },
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: musicNotes,
+    source_code_link: "https://github.com/keithhetrick/musicNotes",
   },
 ];
 

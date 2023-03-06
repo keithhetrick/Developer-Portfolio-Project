@@ -11,6 +11,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { Link } from "react-router-dom";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -23,13 +24,17 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
+        <Link
+          className="flex justify-center items-center w-full h-full hover:scale-110 transition-all duration-300 ease-in-out"
+          to={experience.link}
+          target="_blank"
+        >
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
+            className="w-[80%] h-[80%] object-contain"
           />
-        </div>
+        </Link>
       }
     >
       <div>

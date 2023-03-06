@@ -26,9 +26,12 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import pixelspace from "./pixelspace.png";
+import databox from "./databox.png";
+import chattycathy from "./chattycathy.png";
+import musicNotes from "./musicNotes.png";
+import claydazing from "./claydazing.png";
+import garnish from "./garnish.png";
 
 export {
   logo,
@@ -56,7 +59,10 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  pixelspace,
+  databox,
+  chattycathy,
+  musicNotes,
+  claydazing,
+  garnish,
 };
