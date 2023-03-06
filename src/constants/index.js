@@ -25,6 +25,7 @@ import {
   musicNotes,
   claydazing,
   garnish,
+  codingdojo,
   threejs,
 } from "../assets";
 
@@ -122,6 +123,18 @@ const technologies = [
 ];
 
 const experiences = [
+  {
+    title: "Full Stack Developer",
+    company_name: "coding Dojo",
+    icon: codingdojo,
+    iconBg: "#383E56",
+    link: "https://www.codingdojo.com/",
+    date: "June 2022 - August 2022",
+    points: [
+      "Redesigned eCommerce website to maximize responsiveness—leading to increased sales and higher SEO/visibility.",
+      "Developed built-in search functionality garnering a more optimized customer shopping experience.",
+    ],
+  },
   {
     title: "Front End Developer",
     company_name: "Clay Dazing",

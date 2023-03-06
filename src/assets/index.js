@@ -32,6 +32,7 @@ import chattycathy from "./chattycathy.png";
 import musicNotes from "./musicNotes.png";
 import claydazing from "./claydazing.png";
 import garnish from "./garnish.png";
+import codingdojo from "./codingdojo.ico";
 
 export {
   logo,
@@ -65,4 +66,5 @@ export {
   musicNotes,
   claydazing,
   garnish,
+  codingdojo,
 };
